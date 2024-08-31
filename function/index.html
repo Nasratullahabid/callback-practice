@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Usages of Primitive Data Type & Array Object</title>
+    
+</head>
+<body>
+    <h1>Single Value</h1>
+
+    <h1 id=""uid></h1>
+
+    <h2 d1="d1"></h2>
+    <h2 d1="d2"></h2>
+    <h2 d1="d3"></h2>
+    <h2 d1="d4"></h2>
+    <h2 d1="d5"></h2>
+
+    <h3 id="sid"></h3>
+    <h3 id="sname"></h3>
+
+
+    <script>
+        document.getElementById('uid').innerText= displayData();
+
+        let arr= displayArray();
+        document.getElementById('d1').innerText= arr(0);
+        document.getElementById('d2').innerText= arr(1);
+        document.getElementById('d3').innerText= arr(2);
+        document.getElementById('d4').innerText= arr(3);
+        document.getElementById('d5').innerText= arr(4);
+
+        let obj1= displayObject();
+        document.getElementById('sid').innerText= obj1.sid;
+        document.getElementById('sname').innerText= obj1.sname;
+
+        
+    </script>
+     <script src="./data.js"></script>
+</body>
+</html>
